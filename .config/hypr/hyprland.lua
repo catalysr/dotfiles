@@ -41,7 +41,7 @@ hl.env("ELECTRON_OZONE_PLATFORM_HINT", "wayland")
 hl.env("NVD_BACKEND", "direct")
 hl.env("XDG_SESSION_TYPE", "wayland")
 hl.env("GBM_BACKEND", "nvidia-drm")
-hl.env("GDK_DPI_SCALE", "1.2")
+--hl.env("GDK_DPI_SCALE", "1.2")
 hl.env("QT_FONT_DPI", "115")
 
 -------------------------------
