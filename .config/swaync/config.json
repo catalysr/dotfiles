@@ -1,0 +1,29 @@
+
+{
+  "$schema": "/etc/xdg/swaync/configSchema.json",
+  "positionX": "right",
+  "positionY": "top",
+  "cssPriority": "user",
+  "control-center-width": 400,
+  "timeout": 6,
+  "widgets": [
+    "title",
+    "mpris",
+    "notifications"
+  ],
+  "widget-config": {
+    "title": {
+      "text": "Notifications",
+      "clear-all-button": true
+    },
+    "mpris": {
+      "image-size": 96,
+      "image-radius": 12,
+      "blur": false
+    },
+    "notifications": {
+      "clear-all-button": true,
+      "display-clear-all": true
+    }
+  }
+}

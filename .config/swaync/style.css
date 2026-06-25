@@ -1,0 +1,56 @@
+/* Apply JetBrains Mono globally */
+* {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: bold;
+  background-image: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+/* Floating Popups */
+.notification {
+  background: #0D0D0D;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 0px; /* Force sharp, unrounded corners */
+  padding: 12px;
+  margin: 6px;
+}
+
+/* Main Sidebar Center */
+.control-center {
+  background: #0D0D0D;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 0px;
+  padding: 10px;
+}
+
+/* Inside-history notifications */
+.control-center .notification {
+  background: #0D0D0D;
+  color: #FFFFFF;
+  border: 1px solid #333333;
+  border-radius: 0px;
+}
+
+/* Clear all button and Headers */
+.widget-title button {
+  background: #0D0D0D;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 0px;
+}
+
+
+/* Perfectly valid GTK-compliant layout overrides */
+.notification-image,
+.notification-content image,
+.notification-content img,
+.body-image {
+    border-radius: 0;
+}
+
+image.notification-icon {
+    border-radius: 0;
+}

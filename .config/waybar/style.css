@@ -1,0 +1,25 @@
+* {
+    font-family: "JetBrains Mono", "JetBrainsMono Nerd Font", sans-serif;
+    font-size: 13px; /* Adjust size to fit your custom bar height */
+    font-weight: bold; /* Recreates the punchy, readable text in the image */
+}
+
+
+window#waybar {
+  background-color: #0D0D0D;
+  color: #FFFFFF;
+}
+
+#workspaces button {
+  padding: 5px;
+  color: #FFFFFF;
+}
+
+#workspaces button.active {
+  background-color: #141414;
+  color: #FFFFFF;
+}
+
+#clock, #battery, #network, #cpu, #memory, #tray{
+  padding: 0 10px;
+}
