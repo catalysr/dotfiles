@@ -1,9 +1,12 @@
---get hostname
+local tmp_path = os.getenv("HOME") .. "/.config/hypr/my_host.txt"
+os.execute("hostname > " .. tmp_path)
+
 local function get_hostname()
-    local f = io.popen("hostname")
-    if not f then return "" end
-    local hostname = f:read("*a") or ""
+    local f = io.open(tmp_path, "r")
+    if not f then return "arch" end
+    local hostname = f:read("*l") or "arch"
     f:close()
+    os.remove(tmp_path) 
     return string.gsub(hostname, "%s+", "")
 end
 
