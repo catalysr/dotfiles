@@ -1,16 +1,16 @@
+
+local menu
 if HOST == "arch-laptop" then
-    local menu = "bemenu-run -b -H 36 -W 0.75 --fn 'JetBrains Mono 11' --nb '#0D0D0D' --nf '#FFFFFF' --tb '#0D0D0D' --tf '#FFFFFF' --hb '#FFFFFF' --hf '#0D0D0D'"
+    menu = "bemenu-run -b -H 36 -W 0.75 --fn 'JetBrains Mono 11' --nb '#0D0D0D' --nf '#FFFFFF' --tb '#0D0D0D' --tf '#FFFFFF' --hb '#FFFFFF' --hf '#0D0D0D'"
 
-elseif HOST == "arch" then 
-    local menu = "bemenu-run -b -H 34 -W 0.625 --fn 'JetBrains Mono 11' --nb '#0D0D0D' --nf '#FFFFFF' --tb '#0D0D0D' --tf '#FFFFFF' --hb '#FFFFFF' --hf '#0D0D0D'"
-
+else
+    menu = "bemenu-run -b -H 34 -W 0.625 --fn 'JetBrains Mono 11' --nb '#0D0D0D' --nf '#FFFFFF' --tb '#0D0D0D' --tf '#FFFFFF' --hb '#FFFFFF' --hf '#0D0D0D'"
 end
 -------------------------------------------------------------------------------
 ---- CORE VARIABLES -----------------------------------------------------------
 -------------------------------------------------------------------------------
 local terminal    = "foot"
 local fileManager = "thunar"
-local menu        = "bemenu-run -b -H 36 -W 0.75 --fn 'JetBrains Mono 11' --nb '#0D0D0D' --nf '#FFFFFF' --tb '#0D0D0D' --tf '#FFFFFF' --hb '#FFFFFF' --hf '#0D0D0D'"
 local mainMod     = "SUPER"
 
 -------------------------------------------------------------------------------
