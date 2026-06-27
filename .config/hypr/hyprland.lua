@@ -1,23 +1,39 @@
+--get hostname
+local function get_hostname()
+    local f = io.popen("hostname")
+    if not f then return "" end
+    local hostname = f:read("*a") or ""
+    f:close()
+    return string.gsub(hostname, "%s+", "")
+end
+
+HOST = get_hostname()
+
 ------------------
 ---- MONITORS ----
 ------------------
 
---Laptop
-hl.monitor({
-    output   = "eDP-1",
-    mode     = "1920x1080@144",
-    position = "0x0",
-    scale    = "1.2",
-})
+if HOST == "arch-laptop" then
+    -- Laptop Monitor Configuration
+    hl.monitor({
+        output   = "eDP-1",
+        mode     = "1920x1080@144",
+        position = "0x0",
+        scale    = "1.2",
+    })
+    
+    -- Laptop Specific Environment Variable
+    hl.env("GDK_DPI_SCALE", "1.2")
 
---PC
-hl.monitor({
-    output = "DP-1",
-    mode = "1920x1080@144",
-    position = "0x0",
-    scale = "1",
-
-})
+elseif HOST == "arch" then
+    -- PC Monitor Configuration
+    hl.monitor({
+        output = "DP-1",
+        mode = "1920x1080@144",
+        position = "0x0",
+        scale = "1",
+    })
+end
 
 
 -------------------
